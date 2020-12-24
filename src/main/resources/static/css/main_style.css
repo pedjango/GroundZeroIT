@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+
+/*
+ * font-family: 'Orbitron', sans-serif;
+ * font-family: 'Roboto', sans-serif;
+*/
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * B O D Y * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #161616;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+#typewriter {
+    height: 2.5rem;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * H E A D E R * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+body > header, nav {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+}
+
+header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header > button:focus {
+    outline: 0;
+}
+
+header .navbar-nav li.active > a {
+    color: #5F9EA0;
+}
+
+header img#image-bigger-screen {
+    max-width: 20% !important;
+    min-width: 200px !important;
+}
+
+#image-smaller-screen {
+    display: none;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * N A V I G A T I O N * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+div nav ul {
+    list-style-type: none !important;
+}
+
+div nav ul li {
+    display: inline;
+    padding-left: 10px;
+}
+
+div nav ul li a {
+    color: #161616;
+    font-weight: 700;
+    transition: color 850ms;
+}
+
+div nav ul li a:hover, a:focus {
+    text-decoration: none;
+    color: #5F9EA0; /* Cadetblue = #5F9EA0 */
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * F O O T E R * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+footer {
+    background-color: #5F9EA0;
+    padding: 20px 0;
+    color: #FFFFFF;
+    margin: 60px 0 0 0;
+}
+
+footer h4 {
+    font-size: 1.25rem !important;
+}
+
+footer img {
+    width: 50%;
+    padding: 10px 0;
+}
+
+footer a.footer-link {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+footer a.footer-link:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer a.footer-link:focus, a.footer-link:active, a.footer-link:visited {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+
+#small-screen-footer {
+    display: none;
+}
+
+#google-maps-style {
+    border:0;
+    border-radius: 12px;
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#footer-copyright {
+    padding: 30px 10px 10px 10px;
+    margin: 30px -15px -20px -15px;
+    background-color: #304F50;
+}
+
+#footer-copyright p {
+    font-size: 14px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * C U S T O M * * * R U L E S * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* employeeBox = peopleBox */
+.peopleBox {
+    border: none;
+    box-shadow: 3px 3px 5px #ccc;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 20px;
+    width: 45%;
+    height: auto;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+.peopleBox h4 {
+    margin-bottom: 20px;
+}
+
+.peopleBox h5 {
+    margin-bottom: 20px !important;
+}
+
+.peopleBox p {
+    margin-bottom: 10px;
+}
+
+.peopleBox p a.people-link {
+    color: #161616;
+    transition: color 850ms;
+}
+
+.peopleBox p a.people-link:hover {
+    color: #5F9EA0;
+    text-decoration: none;
+}
+
+.img-people-about {
+    max-width: 100%;
+    height: auto;
+}
+
+.worker-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-button-class {
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-submit {
+    background-color: #161616;
+    color: #FFFFFF;
+    box-shadow: 2px 3px 4px #CCCCCC;
+    font-family: 'Orbitron', sans-serif;
+    margin: 10px 0;
+    transition: background-color 850ms;
+}
+
+.btn-submit:hover {
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+.btn-reset {
+    background-color: #FFFFFF;
+    color: #161616;
+    box-shadow: 2px 3px 4px #CCCCCC;
+    font-family: 'Orbitron', sans-serif;
+    margin: 10px 0;
+    transition: background-color 850ms;
+}
+
+.services-box {
+    background-color: #fafafa;
+    margin: 20px 5px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px #CCCCCC;
+}
+
+.services-box a {
+    width: 70%;
+    max-width: 200px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #5F9EA0;
+    color: #FFFFFF;
+    box-shadow: 0 2px 4px #CCCCCC;
+    border: none;
+    transition: background-color 850ms;
+}
+
+.services-box a:hover {
+    cursor: pointer;
+    background-color: #304F50;
+}
+
+.ourServices {
+    border: none;
+    box-shadow: 3px 3px 5px #ccc;
+    border-radius: 12px;
+    margin: 20px auto;
+    padding: 20px;
+    height: auto;
+    background-color: #FAFAFA;
+}
+
+.services-icons {
+    font-size: 5.5em !important;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * M E D I A * * Q U E R I E S * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media only screen and (max-width: 1300px) {
+    footer img {
+        width: 60% !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .peopleBox .fa-2x {
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .peopleBox h4 {
+        margin-top: 20px !important;
+    }
+    .services-icons {
+        font-size: 4em !important;
+        margin: 20px 0;
+    }
+    .ourServices a {
+        width: 80%;
+        margin: auto 10%;
+        max-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    body header nav {
+        font-size: 20px;
+    }
+    footer img {
+        width: 80% !important;
+    }
+    .services-icons {
+        font-size: 3em !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    footer img {
+        width: 60% !important;
+    }
+    #google-maps-style {
+        width: 80%;
+        margin: 10px 10% 20px 10%;
+    }
+    .services-icons {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+    .peopleBox {
+        margin: 10px;
+        padding: 10px;
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .peopleBox {
+        margin: 10px;
+        padding: 10px;
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 600px) {
+    .peopleBox {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .ourServices {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 513px) {
+    #typewriter {
+        height: 5rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+    body header nav {
+        font-size: 18px;
+    }
+    body main h2 {
+        font-size: 2rem;
+    }
+    footer {
+        font-size: 14px;
+        text-align: center;
+        margin: 40px 0 0 0;
+    }
+    #left-part-footer {
+        display: none;
+    }
+    #right-part-footer {
+        display: none;
+    }
+    #small-screen-footer {
+        display: inline-block;
+    }
+    div p a i {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .peopleBox {
+        margin: 20px 10%;
+        padding: 20px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    body header nav {
+        font-size: 16px;
+    }
+    #image-bigger-screen {
+        display: none;
+    }
+    #image-smaller-screen {
+        display: inline-block;
+        width: 60px !important;
+    }
+    footer img {
+        width: 75% !important;
+    }
+}
