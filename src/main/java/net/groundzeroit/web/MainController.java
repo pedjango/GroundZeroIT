@@ -66,11 +66,16 @@ public class MainController {
         // To the person who contacted us
         mailSender.send(reply);
 
-        return "redirect:/contact";
+        return "redirect:/thanks";
     }
 
     @GetMapping("/impressum")
     public String impressum() {
         return "impressum";
+    }
+
+    @GetMapping("/thanks")
+    public String thanks() {
+        return "thanks";
     }
 }
