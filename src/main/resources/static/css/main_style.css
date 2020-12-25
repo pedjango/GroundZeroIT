@@ -145,6 +145,34 @@ footer a.footer-link:focus, a.footer-link:active, a.footer-link:visited {
  * * * * * * * * * C U S T O M * * * R U L E S * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+.text-under-picture {
+    color: #777777;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.unsplash-link {
+    /* color: #5F9EA0; */
+    color: #777777;
+    text-decoration: underline;
+}
+
+.unsplash-link:hover, .unsplash-link:active, .unsplash-link:focus {
+    text-decoration: none;
+    /* color: #304F50; */
+    color: #5F9EA0;
+}
+
+#contact-image {
+    border-radius: 12px;
+    box-shadow: 0 2px 4px #CCC;
+}
+
+#thanks-image {
+    border-radius: 12px;
+    box-shadow: 0 2px 4px #CCC;
+}
+
 /* employeeBox = peopleBox */
 .peopleBox {
     border: none;
