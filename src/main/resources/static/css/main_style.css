@@ -145,6 +145,19 @@ footer a.footer-link:focus, a.footer-link:active, a.footer-link:visited {
  * * * * * * * * * C U S T O M * * * R U L E S * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+#error-box {
+    background-color: #5F9EA0;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px #777777;
+    width: 90%;
+    height: auto;
+    display: inline-block;
+}
+
+#error-box h2 {
+    color: #FFFFFF;
+}
+
 .text-under-picture {
     color: #777777;
     margin-top: 1rem;
