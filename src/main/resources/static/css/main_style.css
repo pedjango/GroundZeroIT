@@ -145,6 +145,15 @@ footer a.footer-link:focus, a.footer-link:active, a.footer-link:visited {
  * * * * * * * * * C U S T O M * * * R U L E S * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+.impressum-link {
+    color: #5F9EA0;
+}
+
+.impressum-link:hover, .impressum-link:active, .impressum-link:focus {
+    text-decoration: none;
+    color: #304F50;
+}
+
 #error-box {
     background-color: #5F9EA0;
     border-radius: 12px;

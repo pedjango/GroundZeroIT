@@ -1,4 +1,4 @@
 function redirect (){
-    setTimeout(function(){ window.location = '/'; }, 9000);
+    setTimeout(function(){ window.location = '/'; }, 7500);
 }
 redirect();

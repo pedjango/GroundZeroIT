@@ -1,6 +1,6 @@
 var typewriter = function(txt) {
     var container = document.getElementById('typewriter'),
-        speed = 50,
+        speed = 45,
         i = 0,
         wordsObj = txt.split(" ")
     container.textContent = "";
