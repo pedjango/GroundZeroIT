@@ -59,17 +59,16 @@
 
     <!-- Main content -->
     <main class="container">
-        <h2 id="typewriter" data-typewriter="Time to level up!">GND<strong>0</strong></h2>
+        <h2 id="typewriter" data-typewriter="Time to level up!" style="height: 2.5rem !important;">GND<strong>0</strong></h2>
         <hr />
 
-        <br><br>
+        <br>
 
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <!-- <h3>Lorem ipsum</h3>
-                <hr /> -->
                 <img id="contact-image" src="../static/img/richard-lee-unsplash-owl.jpg" th:src="@{/img/richard-lee-unsplash-owl.jpg}" alt="Richard Lee - Owl" class="img-fluid">
                 <p class="text-center text-under-picture"><em><span>Photo by <a class="unsplash-link" href="https://unsplash.com/@brock222?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Richard Lee</a> on <a class="unsplash-link" href="https://unsplash.com/s/photos/owl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank">Unsplash</a></span></em></p>
+                <br>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                 <h3>Leave an inquiry</h3>
@@ -166,7 +165,7 @@
         </div>
         <div class="row" id="footer-copyright">
             <p class="col-12 text-center">
-                Copyright <span th:text=" ${#dates.year(#dates.createNow())} "></span> &copy; Ground Zero IT d.o.o.
+                Copyright <span th:text=" ${#dates.year(#dates.createNow())} "></span> &copy; Ground Zero IT GmbH
             </p>
         </div>
     </footer>

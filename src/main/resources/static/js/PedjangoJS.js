@@ -48,3 +48,4 @@ function oneWord() {
 }
 
 oneWord();
+// setTimeout(oneWord(), 2000);

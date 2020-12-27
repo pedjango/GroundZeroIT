@@ -22,6 +22,21 @@ h1, h2, h3, h4, h5, h6 {
 
 #typewriter {
     height: 2.5rem;
+    /* Animation */
+    animation: fadeOut ease 2s;
+    -webkit-animation: fadeOut ease 2s;
+    -moz-animation: fadeOut ease 2s;
+    -o-animation: fadeOut ease 2s;
+    -ms-animation: fadeOut ease 2s;
+}
+
+main {
+    /* Animation */
+    animation: flowIn ease 2s;
+    -webkit-animation: flowIn ease 2s;
+    -moz-animation: flowIn ease 2s;
+    -o-animation: flowIn ease 2s;
+    -ms-animation: flowIn ease 2s;
 }
 
 
@@ -311,6 +326,61 @@ footer a.footer-link:focus, a.footer-link:active, a.footer-link:visited {
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * A N I M A T I O N S * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@keyframes fadeOut {
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+
+@-moz-keyframes fadeOut {
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+
+@-webkit-keyframes fadeOut {
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+
+@-o-keyframes fadeOut {
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+
+@-ms-keyframes fadeOut {
+    0% { opacity:1; }
+    100% { opacity:0; }
+}
+
+@keyframes flowIn {
+    0% { margin-top: 80px; opacity:0.25; }
+    100% { margin-bottom: 0; opacity:1; }
+}
+
+@-moz-keyframes flowIn {
+    0% { margin-top: 80px; opacity:0.25; }
+    100% { margin-bottom: 0; opacity:1; }
+}
+
+@-webkit-keyframes flowIn {
+    0% { margin-top: 80px; opacity:0.25; }
+    100% { margin-bottom: 0; opacity:1; }
+}
+
+@-o-keyframes flowIn {
+    0% { margin-top: 80px; opacity:0.25; }
+    100% { margin-bottom: 0; opacity:1; }
+}
+
+@-ms-keyframes flowIn {
+    0% { margin-top: 80px; opacity:0.25; }
+    100% { margin-bottom: 0; opacity:1; }
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * * * * * * * * * M E D I A * * Q U E R I E S * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -396,8 +466,26 @@ footer a.footer-link:focus, a.footer-link:active, a.footer-link:visited {
 }
 
 @media only screen and (max-width: 513px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    h6 {
+        font-size: 0.75rem;
+    }
     #typewriter {
-        height: 5rem;
+        height: 4.25rem;
     }
 }
 
