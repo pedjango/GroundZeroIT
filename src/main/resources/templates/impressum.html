@@ -5,41 +5,7 @@
 <body>
     <!-- Header and navigation -->
     <div class="container-fluid">
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-expand-md">
-                <img src="../static/img/black/groundzero__shortened_logo_black.png" class="img-fluid" id="image-bigger-screen" alt="Ground Zero IT Logo" th:src="@{/img/black/groundzero__shortened_logo_black.png}" />
-                <img src="../static/img/black/groundzero__icon_2_black.png" class="img-fluid" id="image-smaller-screen" alt="Ground Zero IT Logo" th:src="@{/img/black/groundzero__icon_2_black.png}" />
-                <!-- Collapse button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span style="font-size: 22px" class="dark-blue-text">
-                        <i class="fa fa-bars" aria-hidden="true"></i>
-                    </span>
-                </button>
-                <!-- Navbar -->
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="/" th:href="@{/}" th:text="#{nav_home}"></a></li> <!-- href="index.html" th:href="@{index.html}" -->
-                        <li class="nav-item dropdown active">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" th:text="#{nav_about}"></a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="nav-link" href="/about" th:href="@{/about}" th:text="#{nav_about_us}"></a>
-                                <a class="nav-link" href="/impressum" th:href="@{/impressum}" th:text="#{nav_impressum}"></a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="/services" th:href="@{/services}" th:text="#{nav_services}"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="/contact" th:href="@{/contact}" th:text="#{nav_contact}"></a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLng" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" th:text="#{langs}"></a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownLng">
-                                <a class="nav-link" href="#" th:text="#{lang.en}" onclick="window.location.href='/impressum?localeData=en'"></a>
-                                <a class="nav-link" href="#" th:text="#{lang.de}" onclick="window.location.href='/impressum?localeData=de'"></a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <header th:replace="fragments/header :: header"></header>
     </div>
 
     <!-- Main content -->

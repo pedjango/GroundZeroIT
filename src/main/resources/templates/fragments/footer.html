@@ -56,6 +56,12 @@
                 Copyright <span th:text=" ${#dates.year(#dates.createNow())} "></span> &copy; Ground Zero IT GmbH
             </p>
         </div>
+        <script>
+            $(document).ready(function() {
+                $('li.active').removeClass('active');
+                $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
+            });
+        </script>
     </footer>
 </body>
 </html>
