@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.w3.org/1999/xhtml"> <!-- lang="en" -->
-<head th:replace="fragments/head :: head('Ground Zero IT')">
+<head th:replace="fragments/head :: head(#{index_title})">
 </head>
 <body>
     <!-- Header and navigation -->
@@ -37,8 +37,7 @@
 
     <!-- Main content -->
     <main class="container">
-        <h2 id="typewriter" th:data-typewriter="#{home_heading}">GND<strong>0</strong></h2> <!--  -->
-        <!-- <h2 id="alternative-main-heading-text">Welcome to Ground Zero IT</h2> -->
+        <h2 id="typewriter" th:data-typewriter="#{home_heading}">GND<strong>0</strong></h2>
         <hr />
         <p th:text="#{home_p1}"></p>
         <p th:text="#{home_p2}"></p>
@@ -73,7 +72,7 @@
         </div>
     </main>
 
-    <div th:insert="fragments/footer :: footer"></div>
+    <footer th:replace="fragments/footer :: footer"></footer>
     <script type="text/javascript" src="../static/js/PedjangoJS.js" th:src="@{/js/PedjangoJS.js}"></script>
 </body>
 </html>

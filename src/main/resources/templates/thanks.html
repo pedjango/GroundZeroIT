@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head th:replace="fragments/head :: head('Thanks!')">
+<head th:replace="fragments/head :: head(#{thanks_title})">
 </head>
 <body>
     <!-- Header and navigation -->
@@ -44,7 +44,7 @@
         <img id="thanks-image" src="../static/img/GroundZeroITimage.png" th:src="@{/img/GroundZeroITimage.png}" alt="Ground Zero IT" class="img-fluid">
     </main>
 
-    <div th:insert="fragments/footer :: footer"></div>
+    <footer th:replace="fragments/footer :: footer"></footer>
     <script type="text/javascript" src="../static/js/RedirectScript.js" th:src="@{/js/RedirectScript.js}"></script>
 </body>
 </html>

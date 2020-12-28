@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head th:replace="fragments/head :: head('Services')">
+<head th:replace="fragments/head :: head(#{services_title})">
 </head>
 <body>
     <!-- Header and navigation -->
@@ -102,7 +102,7 @@
         </div>
     </main>
 
-    <div th:insert="fragments/footer :: footer"></div>
+    <footer th:replace="fragments/footer :: footer"></footer>
     <script type="text/javascript" src="../static/js/PedjangoJS.js" th:src="@{/js/PedjangoJS.js}"></script>
 </body>
 </html>
