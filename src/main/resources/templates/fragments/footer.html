@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<body>
+    <!-- Footer -->
+    <footer th:fragment="footer" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <img src="../../static/img/white/groundzero__full_logo_white.png" th:src="@{/img/white/groundzero__full_logo_white.png}" class="mx-auto d-block d-flex flex-wrap align-items-center" alt="Ground Zero IT Logo" />
+                    <!-- th:src="@{/static/img/white/groundzero__full_logo_white.png" -->
+                    <div class="row">
+                        <div class="col-3" id="left-part-footer"></div>
+                        <div class="col-9" id="right-part-footer">
+                            <h4>Tel</h4>
+                            <a class="footer-link" href="tel:+387 65 143 454">+387 65 143 454</a>
+                            <hr style="visibility: hidden" />
+                            <h4>Email</h4>
+                            <a class="footer-link" href="mailto:info@groundzeroit.net">info@groundzeroit.net</a>
+                            <hr style="visibility: hidden" />
+                            <h4>Social</h4>
+                            <p>
+                                <a class="footer-link" href="https://www.linkedin.com/company/ground-zero-it/" target="_blank">
+                                    <i class="fa fa-linkedin fa-2x" aria-hidden="true" style="margin-right: 15px"></i>
+                                </a>
+                                <a class="footer-link" href="https://www.instagram.com/groundzeroit/" target="_blank">
+                                    <i class="fa fa-instagram fa-2x" aria-hidden="true" style="margin-right: 15px"></i>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-12" id="small-screen-footer">
+                            <h4>Tel</h4>
+                            <a class="footer-link" href="tel:+387 65 143 454">+387 65 143 454</a>
+                            <hr style="visibility: hidden" />
+                            <h4>Email</h4>
+                            <a class="footer-link" href="mailto:info@groundzeroit.net">info@groundzeroit.net</a>
+                            <hr style="visibility: hidden" />
+                            <h4>Social</h4>
+                            <p>
+                                <a class="footer-link" href="https://www.linkedin.com/company/ground-zero-it/" target="_blank">
+                                    <i class="fa fa-linkedin fa-2x" aria-hidden="true" style="margin-right: 15px"></i>
+                                </a>
+                                <a class="footer-link" href="https://www.instagram.com/groundzeroit/" target="_blank">
+                                    <i class="fa fa-instagram fa-2x" aria-hidden="true" style="margin-right: 15px"></i>
+                                </a>
+                            </p>
+                            <hr style="visibility: hidden" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <iframe id="google-maps-style" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d814.8254659601726!2d17.19437573188063!3d44.777663774780514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6177340adcb4b99b!2sGround%20Zero%20IT!5e0!3m2!1sen!2sba!4v1608802967349!5m2!1sen!2sba" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="footer-copyright">
+            <p class="col-12 text-center">
+                Copyright <span th:text=" ${#dates.year(#dates.createNow())} "></span> &copy; Ground Zero IT GmbH
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
