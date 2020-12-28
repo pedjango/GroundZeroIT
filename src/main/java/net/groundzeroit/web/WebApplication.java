@@ -2,6 +2,9 @@ package net.groundzeroit.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.filter.CharacterEncodingFilter;
 // import org.springframework.context.annotation.Bean;
 // import org.springframework.mail.javamail.JavaMailSender;
 // import org.springframework.mail.javamail.JavaMailSenderImpl;
@@ -15,24 +18,16 @@ public class WebApplication {
         SpringApplication.run(WebApplication.class, args);
     }
 
-    /*
     @Bean
-    public JavaMailSender getJavaMailSender() {
-        JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-        mailSender.setHost("smtp.gmail.com");
-        mailSender.setPort(587);
+    public FilterRegistrationBean filterRegistrationBean() {
+        CharacterEncodingFilter filter = new CharacterEncodingFilter();
+        filter.setEncoding("UTF-8");
+        filter.setForceEncoding(true);
 
-        mailSender.setUsername("info.groundzeroit@gmail.com");
-        mailSender.setPassword("Stamenko2609!");
-
-        Properties props = mailSender.getJavaMailProperties();
-        props.put("mail.transport.protocol", "smtp");
-        props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.debug", "true");
-
-        return mailSender;
+        FilterRegistrationBean registrationBean = new FilterRegistrationBean();
+        registrationBean.setFilter(filter);
+        registrationBean.addUrlPatterns("/*");
+        return registrationBean;
     }
-    */
 
 }
