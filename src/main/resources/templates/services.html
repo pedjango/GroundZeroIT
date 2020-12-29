@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head th:replace="fragments/head :: head(#{services_title})">
-</head>
+<head th:replace="fragments/head :: head(#{services_title})"></head>
 <body>
     <!-- Header and navigation -->
     <div class="container-fluid">
@@ -83,18 +82,17 @@
                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12">
                         <p th:text="#{services_box_4_p}"></p>
                         <div class="row">
-                            <div class="col-6">
-                                <ul>
-                                    <li th:text="#{services_box_4_li_1}"></li>
-                                    <li th:text="#{services_box_4_li_2}"></li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <ul>
-                                    <li th:text="#{services_box_4_li_3}"></li>
-                                    <li th:text="#{services_box_4_li_4}"></li>
-                                </ul>
-                            </div>
+                            <ul class="col-4">
+                                <li th:text="#{services_box_4_li_1}"></li>
+                                <li th:text="#{services_box_4_li_2}"></li>
+                            </ul>
+                            <ul class="col-4">
+                                <li th:text="#{services_box_4_li_3}"></li>
+                                <li th:text="#{services_box_4_li_4}"></li>
+                            </ul>
+                            <ul class="col-4">
+                                <li th:text="#{services_box_4_li_5}"></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

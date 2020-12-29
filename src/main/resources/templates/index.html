@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.w3.org/1999/xhtml"> <!-- lang="en" -->
-<head th:replace="fragments/head :: head(#{index_title})">
-</head>
+<head th:replace="fragments/head :: head(#{index_title})"></head>
 <body>
     <!-- Header and navigation -->
     <div class="container-fluid">
@@ -47,11 +46,5 @@
 
     <footer th:replace="fragments/footer :: footer"></footer>
     <script type="text/javascript" src="../static/js/PedjangoJS.js" th:src="@{/js/PedjangoJS.js}"></script>
-    <script>
-        $(".nav .nav-link").on("click", function(){
-            $(".nav").find(".active").removeClass("active");
-            $(this).addClass("active");
-        });
-    </script>
 </body>
 </html>

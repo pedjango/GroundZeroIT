@@ -46,7 +46,8 @@ main {
 
 body > header, nav {
     font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 22px;
 }
 
 header {
